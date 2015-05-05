@@ -9,6 +9,29 @@ package utfpr.ct.dainf.if62c.pratica;
  *
  * @author a1611810
  */
-public class TrianguloEquilatero implement FiguraComLados {
+public class TrianguloEquilatero extends Retangulo {
+
+    public TrianguloEquilatero(double lado) {
+        super(lado, Math.sqrt(3)*lado/2);
+    }
     
+    @Override
+    public double getPerimetro(){
+        return base*3;
+    }
+    
+    @Override
+    public double getArea(){
+        return base*altura/2;
+    }
+    
+    @Override
+    public double getLadoMenor(){
+        return base;
+    }
+    
+    @Override
+    public String getNome(){
+        return this.getClass().getSimpleName();
+    }
 }

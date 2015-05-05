@@ -1,6 +1,7 @@
 
 import utfpr.ct.dainf.if62c.pratica.Quadrado;
 import utfpr.ct.dainf.if62c.pratica.Retangulo;
+import utfpr.ct.dainf.if62c.pratica.TrianguloEquilatero;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -19,6 +20,8 @@ public class Pratica43 {
         System.out.println("Área do Retângulo: " + ret.getArea() + "Perímetro do Retângulo: " + ret.getPerimetro());
         Quadrado qua = new Quadrado(2);
         System.out.println("Área do Quadrado: " + qua.getArea() + "Perímetro do Quadrado: " + qua.getPerimetro());        
+        TrianguloEquilatero tri = new TrianguloEquilatero (4);
+        System.out.println ("Área do Triângulo: " + tri.getArea() + "Perímetro do Triângulo: " + tri.getPerimetro());
     }
     
 }
